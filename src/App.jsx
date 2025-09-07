@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, Suspense, lazy } from "react";
 import LoadingScreen from "./components/LoadingScreen";
 import { useLoadingProgress } from "./hooks/useLoadingProgress";
@@ -8,18 +8,15 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import "./styles/globals.css";
 
 // Lazy loading dei componenti pesanti
 const Projects = lazy(() => import("./components/Projects"));
 
 function App() {
   const [showLoading, setShowLoading] = useState(true);
-  const { progress, isComplete } = useLoadingProgress(3000);
+  const { progress } = useLoadingProgress(3000);
 
-  const handleLoadingComplete = () => {
-    setShowLoading(false);
-  };
+  const handleLoadingComplete = () => setShowLoading(false);
 
   if (showLoading) {
     return (
