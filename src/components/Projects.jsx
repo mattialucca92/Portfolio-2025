@@ -4,6 +4,10 @@ import { useInView } from "../hooks/useInView";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 import "../styles/Projects.css";
+import portfolioImg from "../assets/image/Portfolio.png";
+import moneyTrackerImg from "../assets/image/moneyTracker.png";
+import libreriaImg from "../assets/image/libreria.png";
+import indovinaChiImg from "../assets/image/indovinaChi.png";
 
 const Projects = () => {
   const [ref, isInView] = useInView();
@@ -15,8 +19,8 @@ const Projects = () => {
       id: 1,
       title: "Portfolio Interattivo",
       description:
-      "Portfolio moderno con animazioni Three.js e design responsive",
-      image: "/public/image/Portfolio.png",
+        "Portfolio moderno con animazioni Three.js e design responsive",
+      image: portfolioImg,
       category: "frontend",
       technologies: ["React", "Three.js", "CSS3"],
       link: "https://github.com",
@@ -33,8 +37,8 @@ const Projects = () => {
       id: 2,
       title: "Money Tracker",
       description:
-      "Semplice applicativo sviluppato in Javascript per tenere conto delle proprie spese",
-      image: "/public/image/moneyTracker.png",
+        "Semplice applicativo sviluppato in Javascript per tenere conto delle proprie spese",
+      image: moneyTrackerImg,
       category: "frontend",
       technologies: ["Javascript", "CSS"],
       link: "https://github.com/mattialucca92/Progetto-risparmio",
@@ -49,9 +53,8 @@ const Projects = () => {
       id: 3,
       title: "Owly Project",
       description:
-      "Applicativo che permette, in base alla categoria scritta, di leggere la descrizione del libro scelto",
-      image:
-      "/public/image/libreria.png",
+        "Applicativo che permette, in base alla categoria scritta, di leggere la descrizione del libro scelto",
+      image: libreriaImg,
       category: "frontend",
       technologies: ["Javascript", "CSS"],
       link: "https://github.com/mattialucca92/Owly-project",
@@ -67,7 +70,7 @@ const Projects = () => {
       title: "Indovina chi",
       description:
         "Semplice gioco sviluppato in Javascript per indovinare i calciatori",
-      image: "/public/image/indovinaChi.png",
+      image: indovinaChiImg,
       category: "frontend",
       technologies: ["Javascript"],
       link: "https://github.com/mattialucca92/Indovina-chi",
@@ -79,17 +82,17 @@ const Projects = () => {
       ],
     },
   ];
-  
+
   const categories = [
     { key: "all", label: "Tutti" },
     { key: "frontend", label: "Frontend" },
     { key: "backend", label: "Backend" },
     { key: "fullstack", label: "Full Stack" },
   ];
-  
+
   const filteredProjects =
-  filter === "all"
-  ? projects
+    filter === "all"
+      ? projects
       : projects.filter((project) => project.category === filter);
 
   return (
