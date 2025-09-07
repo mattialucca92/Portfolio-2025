@@ -2,13 +2,15 @@
   "name": "portfolio-2025",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://mattialucca92.github.io/Portfolio-2025/",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.4",
