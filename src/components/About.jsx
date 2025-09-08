@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useInView } from "../hooks/useInView";
 import "../styles/About.css";
 import { useEffect, useRef } from "react";
+import mattialucca from "../assets/image/MattiaLuccaSagoma.png";
+
 
 const About = () => {
   const [ref, isInView] = useInView();
@@ -98,7 +100,7 @@ const About = () => {
             <motion.div className="about-image" variants={itemVariants}>
               <div className="image-container">
                 <img
-                  src="/public/image/MattiaLuccaSagoma.png"
+                  src={mattialucca}
                   alt="Sviluppatore al lavoro"
                   className="profile-image"
                 />
