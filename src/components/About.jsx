@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "../hooks/useInView";
 import "../styles/About.css";
 import { useEffect, useRef } from "react";
-import mattialucca from "../assets/image/MattiaLuccaSagoma.png";
+import mattialucca from "../assets/image/mattiaFotoProfilo.png";
 
 
 const About = () => {

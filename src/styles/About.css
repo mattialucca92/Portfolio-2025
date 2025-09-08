@@ -121,9 +121,9 @@
 }
 
 .profile-image {
-  width: 90%;
+  width: 80%;
   height: 500px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: var(--radius-lg);
   transition: all var(--transition-slow);
   filter: grayscale(0.3);
