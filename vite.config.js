@@ -2,6 +2,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: process.env.VITE_PUBLIC_PATH || "/", // usa "/" in locale
+  base: "/Portfolio-2025/", // Deve corrispondere ESATTAMENTE al nome del repo
   plugins: [react()],
+  build: {
+    outDir: "dist",
+  },
 });
