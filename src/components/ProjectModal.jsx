@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 
 const ProjectModal = ({ project, onClose }) => {
-    console.log("Dati progetto:", project);
+  console.log("Dati progetto:", project);
   useEffect(() => {
     if (project) {
       document.body.style.overflow = "hidden";
@@ -75,16 +75,18 @@ const ProjectModal = ({ project, onClose }) => {
             </div>
 
             <div className="modal-actions">
-              <motion.a
-                href={project.demo}
-                className="btn-demo"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Demo Live
-              </motion.a>
+              {project.demo && project.title !== "Portfolio Interattivo" && (
+                <motion.a
+                  href={project.demo}
+                  className="btn-demo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Demo Live
+                </motion.a>
+              )}
               <motion.a
                 href={project.link}
                 className="btn-code"
@@ -101,7 +103,6 @@ const ProjectModal = ({ project, onClose }) => {
       </motion.div>
     </AnimatePresence>
   );
-  
 };
 
 export default ProjectModal;
