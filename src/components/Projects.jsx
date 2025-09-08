@@ -23,8 +23,7 @@ const Projects = () => {
       image: portfolioImg,
       category: "frontend",
       technologies: ["React", "Three.js", "CSS3"],
-      link: "https://github.com",
-      demo: "https://example.com",
+      link: "https://github.com/mattialucca92/Portfolio-2025",
       features: [
         "Animazioni 3D interattive",
         "Design completamente responsive",

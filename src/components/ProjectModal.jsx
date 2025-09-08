@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 
 const ProjectModal = ({ project, onClose }) => {
+    console.log("Dati progetto:", project);
   useEffect(() => {
     if (project) {
       document.body.style.overflow = "hidden";
@@ -100,6 +101,7 @@ const ProjectModal = ({ project, onClose }) => {
       </motion.div>
     </AnimatePresence>
   );
+  
 };
 
 export default ProjectModal;
