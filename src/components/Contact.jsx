@@ -156,13 +156,15 @@ const Contact = () => {
 
             <div className="cv-upload">
               <h4>Scarica il mio CV</h4>
-              <motion.button
+              <motion.a
+                href={`${import.meta.env.BASE_URL}MattiaLuccaCV-2025.pdf`}
+                download
                 className="download-cv-btn"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 📄 Scarica CV (PDF)
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         </div>
