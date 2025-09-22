@@ -8,6 +8,7 @@ import portfolioImg from "../assets/image/Portfolio.png";
 import moneyTrackerImg from "../assets/image/moneyTracker.png";
 import libreriaImg from "../assets/image/libreria.png";
 import indovinaChiImg from "../assets/image/indovinaChi.png";
+import progettoMeteo from "../assets/image/progettoMeteo.png";
 
 const Projects = () => {
   const [ref, isInView] = useInView();
@@ -34,6 +35,25 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "Weather App",
+      description:
+        "Applicazione React per consultare le previsioni meteo delle città in tempo reale, con grafico delle temperature e visualizzazione dettagliata.",
+      image: progettoMeteo,
+      category: "frontend",
+      technologies: ["React", "Tailwind CSS", "Recharts", "OpenWeather API"],
+      link: "https://github.com/mattialucca92/Weather-App",
+      demo: " https://mattialucca92.github.io/Weather-App/",
+      features: [
+        "Ricerca meteo per città in tempo reale",
+        "Visualizzazione dettagliata: temperatura, umidità, vento, descrizione meteo",
+        "Previsioni orarie con icone meteo personalizzate",
+        "Grafico interattivo delle temperature per le prossime ore",
+        "Interfaccia responsive e accattivante grazie a Tailwind CSS",
+      ],
+    },
+
+    {
+      id: 3,
       title: "Money Tracker",
       description:
         "Semplice applicativo sviluppato in Javascript per tenere conto delle proprie spese",
@@ -49,7 +69,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: "Owly Project",
       description:
         "Applicativo che permette, in base alla categoria scritta, di leggere la descrizione del libro scelto",
@@ -65,7 +85,7 @@ const Projects = () => {
       ],
     },
     {
-      id: 4,
+      id: 5,
       title: "Indovina chi",
       description:
         "Semplice gioco sviluppato in Javascript per indovinare i calciatori",
