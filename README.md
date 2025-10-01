@@ -57,5 +57,6 @@ Se vuoi metterti in contatto con me:
 
 📧 Email: mattialucca92@gmail.com
 💼 LinkedIn: [linkedin.com/in/luccamattia](https://www.linkedin.com/in/luccamattia/)
-🐙 GitHub: github.com/mattialucca92
+🐙 GitHub: [github.com/mattialucca92](https://github.com/mattialucca92)
+
 
