@@ -41,10 +41,13 @@ Navigazione intuitiva e veloce
 
 Clona il repository:
 git clone https://github.com/mattialucca92/Portfolio-2025.git
+
 Accedi alla cartella del progetto:
 cd Portfolio-2025
+
 Installa le dipendenze:
 npm install
+
 Avvia il server di sviluppo:
 npm run dev
 
@@ -53,3 +56,5 @@ npm run dev
 Se vuoi metterti in contatto con me:
 
 📧 Email: mattialucca92@gmail.com
+💼 LinkedIn: linkedin.com/in/luccamattia
+🐙 GitHub: github.com/mattialucca92
