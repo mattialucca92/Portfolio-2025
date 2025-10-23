@@ -23,7 +23,7 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
           >
             <h3>Mattia Lucca</h3>
-            <p>Sviluppatore Web</p>
+            <p>Junior Front-End Developer</p>
           </motion.div>
 
           <motion.div

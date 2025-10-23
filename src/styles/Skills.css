@@ -89,9 +89,9 @@
 }
 
 .skill-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(64, 64, 76, 0.402)!important;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgb(118, 118, 118);
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   transition: all var(--transition-normal);

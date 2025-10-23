@@ -62,7 +62,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
           >
-            Sviluppatore Web Full Stack specializzato in React, Javascript e Laravel.
+            Sviluppatore Junior specializzato in React, Javascript e Laravel.
           </motion.p>
 
           <motion.div

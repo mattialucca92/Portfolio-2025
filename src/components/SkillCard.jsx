@@ -19,8 +19,8 @@ const SkillCard = ({ skill, index, isInView }) => {
           className="skill-color"
           style={{
             backgroundColor: skill.color,
-            width: "20px",
-            height: "20px",
+            width: "25px",
+            height: "25px",
             borderRadius: "50%",
             marginBottom: "10px",
           }}

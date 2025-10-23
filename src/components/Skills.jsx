@@ -28,7 +28,7 @@ const Skills = () => {
         { name: "HTML5", color: "#E34F26", icon: <FaHtml5 /> },
         { name: "CSS3", color: "#1572B6", icon: <FaCss3Alt /> },
         { name: "Tailwind CSS", color: "#06B6D4", icon: <SiTailwindcss /> },
-        { name: "Three.js", color: "#000000", icon: <SiThreedotjs /> },
+        { name: "Three.js", color: "#000000ff", icon: <SiThreedotjs /> },
       ],
     },
     backend: {
@@ -55,6 +55,7 @@ const Skills = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
+          
           Le Mie Competenze
         </motion.h2>
 
