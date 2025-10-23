@@ -35,6 +35,24 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "CoinCatcher",
+      description:
+        "CoinCatcher è un’applicazione web sviluppata per monitorare in modo chiaro e organizzato entrate, spese e saldo complessivo. È pensata per aiutare l’utente a visualizzare l’andamento delle proprie finanze nel tempo e a gestire il budget in modo consapevole.",
+      image: moneyTrackerImg,
+      category: "frontend",
+      technologies: ["React", "Tailwind", "Vite", "React Router"],
+      link: "https://github.com/mattialucca92/CoinCatcher",
+      demo: "https://coincatcher.netlify.app/dashboard",
+      features: [
+        "Dashboard interattiva: panoramica del bilancio totale, grafici e riepilogo rapido di spese e guadagni.",
+        "Gestione transazioni: possibilità di aggiungere, modificare o eliminare entrate e uscite, con categorie personalizzabili (es. “Cibo”, “Lavoro”, “Casa”, ecc.).",
+        "Filtri dinamici: visualizzazione dei movimenti per periodo, tipo o categoria.",
+        "Statistiche mensili: analisi dei trend e confronto tra mesi diversi.",
+        "Persistenza dati: salvataggio locale (localStorage o database) per mantenere lo storico delle operazioni anche dopo il refresh.",
+      ],
+    },
+    {
+      id: 3,
       title: "Weather App",
       description:
         "Applicazione React per consultare le previsioni meteo delle città in tempo reale, con grafico delle temperature e visualizzazione dettagliata.",
@@ -52,22 +70,6 @@ const Projects = () => {
       ],
     },
 
-    {
-      id: 3,
-      title: "Money Tracker",
-      description:
-        "Semplice applicativo sviluppato in Javascript per tenere conto delle proprie spese",
-      image: moneyTrackerImg,
-      category: "frontend",
-      technologies: ["Javascript", "CSS"],
-      link: "https://github.com/mattialucca92/Progetto-risparmio",
-      demo: "https://mattialucca92.github.io/Progetto-risparmio/",
-      features: [
-        "Gestione completa entrate/uscite",
-        "Salvataggio dati in localStorage",
-        "Filtro per periodo e categoria",
-      ],
-    },
     {
       id: 4,
       title: "Owly Project",
